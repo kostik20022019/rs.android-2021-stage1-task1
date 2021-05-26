@@ -20,7 +20,7 @@ class Task1StringParserTest {
                 "The numbers(3500) are incredible, so difficult." +
                 " I said we wanted to write our own stories, create our own history," +
                 " said Klopp(the boss of Liverpool[English football club])."
-        val result = arrayOf("link", "3500", "the boss of Liverpool[English football club]", "English football club")
+        val result = arrayOf("link", "3500", "English football club", "the boss of Liverpool[English football club]")
         assertArrayEquals(result, stringParser.getResult(inputStr))
     }
 
